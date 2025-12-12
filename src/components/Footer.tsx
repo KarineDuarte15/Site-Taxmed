@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <img src={logo} alt="TaxMed" className="h-20 w-auto mb-4 brightness-0 invert" />
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
-              Contabilidade digital especializada para profissionais da saúde. 
+              Contabilidade digital especializada para profissionais da saúde.
               100% online, compliance e economia real.
             </p>
             <div className="flex gap-4">
@@ -81,7 +81,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-primary mt-0.5" />
                 <div>
-                  <p className="text-sm">(11) 99999-9999</p>
+                  <p className="text-sm">(85) 98741-1585</p>
                   <p className="text-xs text-primary-foreground/50">WhatsApp</p>
                 </div>
               </li>
@@ -107,6 +107,9 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-primary-foreground/50">
             © {new Date().getFullYear()} TaxMed. Todos os direitos reservados.
+          </p>
+          <p className="text-sm text-primary-foreground/50">
+            Desenvolvido por <a href="https://site-karine-duarte-developer.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">Karine Duarte Developer</a>
           </p>
           <div className="flex gap-6 text-sm text-primary-foreground/50">
             <a href="#" className="hover:text-primary-foreground transition-colors">Política de Privacidade</a>
