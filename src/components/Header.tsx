@@ -96,12 +96,15 @@ const Header = () => {
           <nav className="lg:hidden py-4 border-t border-border/30 animate-fade-up">
             <div className="flex flex-col gap-4">
               <Link to="/" onClick={() => setIsMenuOpen(false)} className="text-foreground/80 hover:text-primary font-medium py-2">Início</Link>
-
+              <Link to="/servicos" onClick={() => setIsMenuOpen(false)} className="text-foreground/80 hover:text-primary font-medium py-2">Serviços</Link>
+              <Link to="/planos" onClick={() => setIsMenuOpen(false)} className="text-foreground/80 hover:text-primary font-medium py-2">Planos</Link>
+              <Link to="/sobre" onClick={() => setIsMenuOpen(false)} className="text-foreground/80 hover:text-primary font-medium py-2">Sobre</Link>
               <div className="space-y-2 pl-4 border-l-2 border-primary/20">
                 <p className="text-sm font-semibold text-primary mb-2">Segmentos</p>
                 <Link to="/medicos" onClick={() => setIsMenuOpen(false)} className="block text-foreground/80 py-1">Médicos</Link>
                 <Link to="/dentistas" onClick={() => setIsMenuOpen(false)} className="block text-foreground/80 py-1">Dentistas</Link>
                 <Link to="/clinicas" onClick={() => setIsMenuOpen(false)} className="block text-foreground/80 py-1">Clínicas</Link>
+
               </div>
 
               <div className="pt-4 flex flex-col gap-3">

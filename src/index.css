@@ -294,3 +294,66 @@ footer,
   transform: translateY(-3px);
   /* Feedback visual simples e leve */
 }
+
+@media (max-width: 992px) {
+
+  /* Esconde o menu desktop normal inicialmente */
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    /* Altura aproximada do cabeçalho */
+    right: 0;
+    width: 100vw;
+    /* Ocupa a largura total */
+    height: 92vh;
+    /* Ocupa o resto da altura da tela */
+    background-color: #ffffff;
+    /* Fundo branco para leitura */
+    flex-direction: column;
+    /* Itens um embaixo do outro */
+    align-items: center;
+    /* Centralizado */
+    justify-content: flex-start;
+    /* Começa do topo */
+    padding-top: 50px;
+    /* Espaço no topo */
+
+    /* Efeito de deslizar ou aparecer */
+    transform: translateX(100%);
+    /* Escondido para a direita */
+    transition: transform 0.3s ease-in;
+
+    /* IMPORTANTE: Permite rolar se tiver muitas opções */
+    overflow-y: auto;
+    z-index: 999;
+  }
+
+  /* Itens da lista */
+  .nav-list li {
+    margin-left: 0;
+    margin-bottom: 30px;
+    /* Espaço entre opções */
+    opacity: 0;
+    /* Escondido para animação */
+  }
+
+  /* Classe que o JavaScript vai adicionar quando clicar no hambúrguer */
+  .nav-list.active {
+    transform: translateX(0);
+    /* Traz o menu para a tela */
+  }
+
+  /* Animação simples para os itens aparecerem */
+  .nav-list.active li {
+    opacity: 1;
+    transition: opacity 0.5s ease 0.2s;
+  }
+
+  /* Mostrar o botão hambúrguer */
+  .mobile-menu-btn {
+    display: block;
+    /* Ou flex */
+    cursor: pointer;
+    z-index: 1000;
+  }
+}
