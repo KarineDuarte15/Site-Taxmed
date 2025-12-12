@@ -2,10 +2,10 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Dr. Ricardo Mendes",
-    role: "Cardiologista",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=100&h=100&fit=crop&crop=face",
-    quote: "Reduzi meus impostos em 35% no primeiro ano. A equipe da TaxMed entende perfeitamente as necessidades de quem trabalha na saúde.",
+    name: "Valéria Nobre",
+    role: "Gerente Executiva",
+    image: "valeria.png",
+    quote: "Segurança, Credibilidade, Presteza e se não o suficiente a equipe é exemplo do gestor, são extremamente solícitos e gentis! Como empresa agradecemos muito!",
     rating: 5,
   },
   {
@@ -27,7 +27,7 @@ const testimonials = [
 const stats = [
   { value: "2.500+", label: "Clientes ativos" },
   { value: "R$ 15M", label: "Economia gerada/ano" },
-  { value: "98%", label: "Satisfação" },
+  { value: "99%", label: "Satisfação" },
   { value: "10+", label: "Anos de experiência" },
 ];
 
@@ -36,7 +36,7 @@ const SocialProof = () => {
     <section id="sobre" className="py-20 md:py-32 relative overflow-hidden">
       {/* Background */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-background via-muted/20 to-background" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
