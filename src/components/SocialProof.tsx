@@ -10,9 +10,9 @@ const testimonials = [
   },
   {
     name: "Dra. Camila Santos",
-    role: "Dentista - Proprietária de clínica",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&h=100&fit=crop&crop=face",
-    quote: "Finalmente uma contabilidade que fala minha língua. O atendimento pelo WhatsApp é rápido e as orientações sempre claras.",
+    role: "Psicóloga",
+    image: "sara.jpeg",
+    quote: "Finalmente uma contabilidade que fala minha língua, desde 2023 que utilizo os serviços.Sempre atenciosos! Grata pelo trabalho",
     rating: 5,
   },
   {
@@ -25,7 +25,7 @@ const testimonials = [
 ];
 
 const stats = [
-  { value: "2.500+", label: "Clientes ativos" },
+  { value: "+500", label: "Clientes impactados" },
   { value: "R$ 15M", label: "Economia gerada/ano" },
   { value: "99%", label: "Satisfação" },
   { value: "10+", label: "Anos de experiência" },

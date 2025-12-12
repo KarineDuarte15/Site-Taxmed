@@ -110,7 +110,12 @@
     font-family: 'Inter', sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-semibold tracking-tight;
   }
 }
@@ -171,18 +176,24 @@
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }
 }
 
 @keyframes pulse-soft {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.7;
   }
@@ -193,6 +204,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -204,6 +216,7 @@
     opacity: 0;
     transform: translateX(20px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -218,8 +231,66 @@
   animation: slide-in-right 0.5s ease-out forwards;
 }
 
-.animation-delay-100 { animation-delay: 100ms; }
-.animation-delay-200 { animation-delay: 200ms; }
-.animation-delay-300 { animation-delay: 300ms; }
-.animation-delay-400 { animation-delay: 400ms; }
-.animation-delay-500 { animation-delay: 500ms; }
+html {
+  scroll-behavior: smooth;
+}
+
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
+
+/* Footer Styles - Remove qualquer padrão ou linha de background */
+footer,
+.site-footer {
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+  background-position: initial !important;
+  border: none !important;
+  box-shadow: none;
+}
+
+/* 1. Prevenção de layout quebrado */
+.site-footer img {
+  max-width: 100%;
+  /* Garante que a imagem nunca ultrapasse o container */
+  height: auto;
+  display: block;
+  /* Remove espaços extras abaixo da imagem */
+}
+
+/* 2. Tratamento para quando a imagem falha */
+/* Se a imagem quebrar, mostramos um fundo cinza suave e o texto ALT fica visível */
+.footer-logo img:not([src]) {
+  visibility: hidden;
+}
+
+/* 3. Otimização de cliques em dispositivos móveis */
+.social-icons a {
+  display: inline-block;
+  padding: 10px;
+  /* Aumenta a área de clique para facilitar o toque no telemóvel */
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  /* Animação suave consome menos processamento que animações complexas */
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+  /* Feedback visual simples e leve */
+}

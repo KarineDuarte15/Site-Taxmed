@@ -53,32 +53,57 @@ const Segments = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+            Especialização por Segmento
+          </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Soluções para cada{" "}
             <span className="gradient-text">profissional da saúde</span>
           </h2>
+          <p className="text-lg text-muted-foreground">
+            Entendemos as particularidades tributárias de cada segmento.
+            Escolha sua área e descubra como podemos ajudar.
+          </p>
         </div>
 
+        {/* Grid ajustado para alinhar alturas */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {segments.map((segment, index) => (
             <div
               key={segment.title}
-              className="group glass-card rounded-2xl p-6 hover-lift cursor-pointer animate-fade-up flex flex-col"
+              // ADICIONADO: h-full para forçar altura total
+              className="group glass-card rounded-2xl p-6 hover-lift cursor-pointer animate-fade-up flex flex-col border border-border/50 h-full"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${segment.color} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
-                <segment.icon className="h-7 w-7 text-primary-foreground" />
+              {/* Ícone */}
+              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${segment.color} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-md`}>
+                <segment.icon className="h-6 w-6 text-primary-foreground" />
               </div>
 
+              {/* Título */}
               <h3 className="text-xl font-bold text-foreground mb-3">
                 {segment.title}
               </h3>
-              <p className="text-muted-foreground text-sm mb-4 leading-relaxed flex-grow">
+
+              {/* Descrição - ADICIONADO min-h-[60px] para alinhar o início da lista */}
+              <p className="text-muted-foreground text-sm mb-6 leading-relaxed min-h-[60px]">
                 {segment.description}
               </p>
 
+              {/* Lista de Benefícios - flex-grow empurra o botão para baixo */}
+              <ul className="space-y-3 mb-6 flex-grow">
+                {segment.benefits.map((benefit, i) => (
+                  <li key={i} className="flex items-start gap-2.5">
+                    {/* Bolinha colorida */}
+                    <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5 shrink-0" />
+                    <span className="text-xs text-foreground/80 font-medium">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* Botão sempre no fundo (mt-auto) */}
               <Link to={segment.path} className="w-full mt-auto">
-                <Button variant="ghost" className="w-full group/btn text-primary hover:text-primary justify-start px-0 hover:bg-transparent">
+                <Button variant="ghost" className="w-full group/btn text-primary hover:text-primary justify-start px-0 hover:bg-transparent -ml-2">
                   Saiba mais
                   <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover/btn:translate-x-1" />
                 </Button>
