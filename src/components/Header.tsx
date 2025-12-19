@@ -76,9 +76,15 @@ const Header = () => {
               <Phone className="h-4 w-4" />
               (85) 98741-1585
             </Button>
-            <Button variant="gradient" size="default">
-              Agendar Consultoria
-            </Button>
+            <a
+              href="https://api.whatsapp.com/send/?phone=5585987411585&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+planos.&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="gradient" size="default">
+                Agendar Consultoria
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -108,9 +114,16 @@ const Header = () => {
               </div>
 
               <div className="pt-4 flex flex-col gap-3">
-                <Button variant="gradient" className="w-full">
-                  Agendar Consultoria
-                </Button>
+                <a
+                  href="https://api.whatsapp.com/send/?phone=5585987411585&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+planos.&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full"
+                >
+                  <Button variant="gradient" className="w-full">
+                    Agendar Consultoria
+                  </Button>
+                </a>
               </div>
             </div>
           </nav>
