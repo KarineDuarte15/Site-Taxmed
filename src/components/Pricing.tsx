@@ -25,7 +25,7 @@ const plans = [
     period: "/mês*",
     billingDetails: "No plano anual (cartão). R$ 497,00 no mensal",
     features: [
-      "Emissão até 30 NFs/mês",
+      "Emissão de NFs ilimitadas",
       "Contabilidade digital completa",
       "Balanço e DRE anual",
       "Impostos e guias mensais",
