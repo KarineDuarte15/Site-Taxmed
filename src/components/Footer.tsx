@@ -39,10 +39,10 @@ const Footer = () => {
               100% online, compliance e economia real.
             </p>
             <div className="flex gap-4">
-              <a href="#https://www.instagram.com/taxmed.assessoria/" className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://www.instagram.com/taxmed.assessoria/" className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://www.instagram.com/taxmed.assessoria/" className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
               <a href="https://www.facebook.com/profile.php?id=61553438125084" className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
