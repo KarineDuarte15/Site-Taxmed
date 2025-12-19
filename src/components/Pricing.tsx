@@ -9,10 +9,11 @@ const plans = [
     period: "/mês*",
     billingDetails: "R$ 997/ano (12x cartão) ou R$ 109,00 mensal",
     features: [
-      "Emissão de até 5 notas/mês",
+      "Emissão de NFs ilimitadas",
       "Cálculo de impostos mensais",
       "Entrega das guias",
       "Conta PJ digital inclusa",
+      "Entrega da Declaração Anual Simei",
     ],
     highlighted: false,
     cta: "Começar Agora",
@@ -30,6 +31,7 @@ const plans = [
       "Impostos e guias mensais",
       "Sede virtual gratuita",
       "Pró-labore do sócio",
+      "Faturamento até 30 mil reais / mês",
     ],
     highlighted: true,
     badge: "Mais Popular",
@@ -92,8 +94,8 @@ const Pricing = () => {
             <div
               key={plan.name}
               className={`relative rounded-2xl p-6 animate-fade-up flex flex-col ${plan.highlighted
-                  ? "glass-card border-2 border-primary/30 glow-effect scale-105 z-10"
-                  : "glass-card hover-lift"
+                ? "glass-card border-2 border-primary/30 glow-effect scale-105 z-10"
+                : "glass-card hover-lift"
                 }`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
