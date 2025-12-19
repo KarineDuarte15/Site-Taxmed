@@ -144,13 +144,20 @@ const Pricing = () => {
               </ul>
 
               {/* CTA */}
-              <Button
-                variant={plan.highlighted ? "gradient" : "outline"}
-                size="lg"
+              <a
+                href="https://api.whatsapp.com/send/?phone=5585987411585&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+planos.&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full mt-auto"
               >
-                {plan.cta}
-              </Button>
+                <Button
+                  variant={plan.highlighted ? "gradient" : "outline"}
+                  size="lg"
+                  className="w-full"
+                >
+                  {plan.cta}
+                </Button>
+              </a>
             </div>
           ))}
         </div>
