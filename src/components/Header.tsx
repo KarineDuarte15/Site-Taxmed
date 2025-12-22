@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 import { Link } from "react-router-dom";
@@ -72,19 +72,23 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <Button variant="ghost" size="sm" className="gap-2">
-              <Phone className="h-4 w-4" />
-              (85) 98741-1585
-            </Button>
             <a
               href="https://api.whatsapp.com/send/?phone=5585987411585&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+planos.&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button variant="gradient" size="default">
+              <Button variant="outline" size="sm" className="gap-2 border-primary/20 text-primary hover:bg-primary/5">
                 Agendar Consultoria
               </Button>
             </a>
+            <div className="hidden lg:flex items-center gap-3">
+              <a href="https://app.taxmed.com.br" target="_blank" rel="noopener noreferrer">
+                <Button variant="gradient" size="default">
+                  <User className="h-4 w-4" />
+                  Área do Cliente
+                </Button>
+              </a>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -120,11 +124,22 @@ const Header = () => {
                   rel="noopener noreferrer"
                   className="w-full"
                 >
-                  <Button variant="gradient" className="w-full">
+                  <Button variant="outline" className="w-full gap-2 border-primary/20 text-primary">
                     Agendar Consultoria
+                  </Button>
+
+                </a>
+              </div>
+
+              <div className="pt-4 flex flex-col gap-3">
+                <a href="https://app.taxmed.com.br" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button variant="gradient" size="default" className="w-full">
+                    <User className="h-4 w-4" />
+                    Área do Cliente
                   </Button>
                 </a>
               </div>
+
             </div>
           </nav>
         )}
