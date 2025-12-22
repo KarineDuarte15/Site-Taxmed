@@ -66,13 +66,17 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-2 sm:pt-4 animate-fade-up animation-delay-400">
-              <Button variant="gradient" size="xl" className="group shadow-lg shadow-primary/25 w-full sm:w-auto">
-                Agende consultoria gratuita
-                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1 ml-2" />
-              </Button>
-              <Button variant="outline" size="xl" className="bg-background/50 backdrop-blur-sm hover:bg-primary/80 w-full sm:w-auto">
-                Conheça nossos planos
-              </Button>
+              <a href="https://api.whatsapp.com/send/?phone=5585987411585&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+planos.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                <Button variant="gradient" size="xl" className="group shadow-lg shadow-primary/25 w-full sm:w-auto">
+                  Agende consultoria gratuita
+                  <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1 ml-2" />
+                </Button>
+              </a>
+              <a href="#planos">
+                <Button variant="outline" size="xl" className="bg-background/50 backdrop-blur-sm hover:bg-primary/80 w-full sm:w-auto">
+                  Conheça nossos planos
+                </Button>
+              </a>
             </div>
           </div>
 
