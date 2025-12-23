@@ -16,9 +16,6 @@ const Footer = () => {
               Agende uma consultoria gratuita e descubra quanto você pode economizar com a contabilidade digital especializada.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button variant="gradient" size="xl">
-                Agendar consultoria gratuita
-              </Button>
               <Button variant="whatsapp" size="xl" className="gap-2">
                 <MessageCircle className="h-5 w-5" />
                 Falar no WhatsApp
