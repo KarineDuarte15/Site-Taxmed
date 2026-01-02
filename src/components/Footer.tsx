@@ -5,25 +5,7 @@ import logo from "@/assets/logo.png";
 const Footer = () => {
   return (
     <footer id="contato" className="bg-brand-dark text-primary-foreground">
-      {/* CTA Section */}
-      <div className="border-b border-primary-foreground/10">
-        <div className="container mx-auto px-4 py-16">
-          <div className="glass-card rounded-2xl p-8 md:p-12 bg-primary/10 backdrop-blur-xl border-primary/20 text-center">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-              Pronto para economizar em impostos?
-            </h2>
-            <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
-              Agende uma consultoria gratuita e descubra quanto você pode economizar com a contabilidade digital especializada.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button variant="whatsapp" size="xl" className="gap-2">
-                <MessageCircle className="h-5 w-5" />
-                Falar no WhatsApp
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-16">
