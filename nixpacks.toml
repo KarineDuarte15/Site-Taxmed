@@ -1,0 +1,8 @@
+[phases.build]
+cmds = ["npm run build"]
+
+[phases.setup]
+nixPkgs = ["nginx"]
+
+[start]
+cmd = "nginx -c /app/nginx.conf -g 'daemon off;'"
