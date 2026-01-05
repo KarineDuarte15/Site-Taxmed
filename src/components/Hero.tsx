@@ -30,8 +30,7 @@ const Hero = () => {
   return (
     <section
       id="inicio"
-      // 1. Aumentei o pt (padding-top) para pt-28 ou pt-32 no mobile para "fugir" do menu fixo
-      // Adicionei overflow-hidden para evitar scroll horizontal indesejado
+
       className="relative min-h-fit lg:min-h-screen flex items-start lg:items-center py-12 pt-32 pb-12 lg:py-20 overflow-x-hidden bg-background"
     >
       <RetroGrid />
@@ -41,32 +40,27 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-3xl -z-10 hidden md:block" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        {/* 2. Grid explícito: 1 coluna no mobile, 2 no desktop (lg) */}
-        {/* Adicionei gap-y-12 para separar bem o texto do formulário no mobile */}
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-12 items-center">
 
-          {/* --- Coluna da Esquerda (Texto) --- */}
           <div className="space-y-6 md:space-y-8 flex flex-col items-center lg:items-start text-center lg:text-left">
 
-            {/* Badge */}
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium animate-fade-up backdrop-blur-sm border border-primary/20">
               <Shield className="h-4 w-4 flex-shrink-0" />
               <span className="whitespace-nowrap">100% Digital • Especialistas</span>
             </div>
 
-            {/* Título Principal */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-up animation-delay-100 text-foreground">
               Contabilidade digital para{" "}
               <span className="gradient-text block sm:inline">profissionais da saúde</span>
             </h1>
 
-            {/* Descrição */}
+
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-lg animate-fade-up animation-delay-200">
               Reduza impostos, organize recebíveis e fique em dia com o fisco —
               tudo 100% online com atendimento especializado.
             </p>
 
-            {/* Stats (Economia média) */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 pt-2 sm:pt-4 animate-fade-up animation-delay-300">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl gradient-bg flex items-center justify-center shadow-lg shadow-primary/20 flex-shrink-0">
@@ -79,7 +73,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Botões de Ação */}
             <div className="flex flex-col sm:flex-row w-full sm:w-auto gap-3 sm:gap-4 pt-2 sm:pt-4 animate-fade-up animation-delay-400">
               <a href="https://api.whatsapp.com/send/?phone=5585987411585&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+planos.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button variant="gradient" size="xl" className="group shadow-lg shadow-primary/25 w-full">
@@ -95,9 +88,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* --- Coluna da Direita (Formulário) --- */}
           <div className="w-full lg:pl-8 animate-fade-up animation-delay-300">
-            {/* 3. Ajustei padding interno (p-5) para mobile */}
             <div className="glass-card rounded-2xl p-5 sm:p-6 lg:p-8 glow-effect relative overflow-visible border-t-2 border-primary/20 mx-auto max-w-md lg:max-w-full">
               <div className="mb-4 sm:mb-6 relative z-10 text-center lg:text-left">
                 <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
