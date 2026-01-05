@@ -7,7 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import SegmentPage from "./pages/SegmentPage";
 import WhatsAppButton from "./components/WhatsAppButton";
-import { Analytics } from "@vercel/analytics/react";
+
 
 
 const queryClient = new QueryClient();
@@ -33,7 +33,6 @@ const App = () => (
         </Routes>
         <WhatsAppButton />
       </BrowserRouter>
-      <Analytics />
     </TooltipProvider>
   </QueryClientProvider>
 );
